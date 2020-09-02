@@ -34,8 +34,8 @@ h5,
 h6,
 strong {
   color: var(--mainText);
-  font-family: 'Russo One', sans-serif;
-  font-weight: 500;
+
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 p,
@@ -46,7 +46,7 @@ label,
 input,
 textarea {
   color: var(--secondaryText);
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 a {
@@ -279,8 +279,12 @@ h6 {
 
 #skills {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: var(--previewShadow);
+}
+
+#skills ul {
+  margin-left: -40px;
 }
 .social-links {
   display: grid;
@@ -388,11 +392,20 @@ h6 {
     background-color: var(--previewShadow);
     width: 240px;
     height: 140px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: -20px;
     margin-bottom: 30px;
     margin-right: 10px;
   }
   #preview {
     width: 240px;
-    margin-right: 50px;
+    height: 140px;
+    padding-left: 20px;
+    padding-top: 20px;
+    /* margin-right: 50px;
+    margin-bottom: 30px; */
+    padding-bottom: 40px;
   }
 }
