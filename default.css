@@ -215,7 +215,7 @@ h6 {
 #purple-mode {
   background-color: #7e4c74;
 }
-#settings-note {
+.settings-note {
   font-size: 12px;
   font-style: italic;
   text-align: center;
