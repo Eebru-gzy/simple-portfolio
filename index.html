@@ -281,7 +281,8 @@
           * I am working on getting a suitable mailing service to use for this
           form so please get in touch via my social media handles. Thanks
         </p>
-        <form id="contact-form" data-netlify="true">
+        <form id="contact-form" data-netlify="true" method="POST">
+
           <label>Name</label>
           <input type="text" name="name" class="input-field" />
           <label>Subject</label>
@@ -290,6 +291,7 @@
           <input type="email" name="email" class="input-field" />
           <label>Message</label>
           <textarea class="input-field" name="message"></textarea>
+          <div data-netlify-recaptcha="true"></div>
           <input id="submit-btn" type="submit" value="Send" />
         </form>
       </div>
