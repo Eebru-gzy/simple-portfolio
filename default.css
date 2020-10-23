@@ -96,7 +96,6 @@ h6 {
   display: grid;
   text-align: center;
   align-content: center;
-
   min-height: 10em;
 }
 
@@ -104,9 +103,9 @@ h6 {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  box-shadow: -1 1px 3px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.85);
+  box-shadow: -1 1px 3px -1px rgba(0, 0, 0, 0.85);
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -174,10 +173,21 @@ h6 {
 #profile_pic {
   display: block;
   margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
   border: 2px solid var(--borderColor);
+  border-radius: 7px;
+}
+
+#profile_pic:hover{
+  height: 260px;
+  width: 260px;
+  -webkit-transform:rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
 }
 
 #theme-options-wrapper {
@@ -243,6 +253,14 @@ h6 {
   position: relative;
 }
 
+#preview-shadow:hover {
+  width: 350px;
+}
+
+#preview:hover {
+  width: 350px;
+}
+
 .corner {
   width: 7px;
   height: 7px;
@@ -294,6 +312,26 @@ h6 {
 #social_img {
   width: 100%;
 }
+
+#social_img:hover {
+  -webkit-transform:rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+#social_icon {
+  height: 50px;
+  width: 50px;
+}
+#social_icon:hover  {
+  height: 70px;
+  width: 70px;
+}
+.socials  {
+  display: inline;
+}
 .post-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 320px);
@@ -308,6 +346,14 @@ h6 {
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.post:hover {
+  -webkit-transform:rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
 }
 .thumbnail {
   display: block;
